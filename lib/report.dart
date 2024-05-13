@@ -1,4 +1,5 @@
 import 'package:first_project/widgets/routine_info.dart';
+import 'package:first_project/widgets/subject_wise.dart';
 import 'package:flutter/material.dart';
 
 class Report extends StatelessWidget {
@@ -25,7 +26,7 @@ class Report extends StatelessWidget {
       ),
       backgroundColor: Colors.black12,
       body: const Column(
-       crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
             padding: EdgeInsets.only(left: 18.0),
@@ -34,11 +35,14 @@ class Report extends StatelessWidget {
           Expanded(
               flex: 1,
               child: RoutineInfo()),
-          Text("Subject Wise",style: TextStyle(color: Colors.white),),
+          Padding(
+            padding: EdgeInsets.only(left: 18.0),
+            child: Text("Subject Wise",style: TextStyle(color: Colors.white),),
+          ),
 
           Expanded(
               flex: 2,
-              child: Placeholder()),
+              child: SubjectWise()),
 
         ],
       ),

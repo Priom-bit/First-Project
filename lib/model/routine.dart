@@ -15,3 +15,21 @@ class routine{
     ];
   }
 }
+
+class subjectwise{
+
+  String subjectname;
+  String percentagedescription;
+  String percentage;
+  String icon;
+  String details;
+
+  subjectwise(this.subjectname, this.percentagedescription, this.percentage,this.icon,this.details);
+
+  static List<subjectwise> subjectwiselist(){
+    return [
+      subjectwise("Mathmatics", "Based On Percentage", "80%","assets/images/up-right-arrow.png","Details"),
+      subjectwise("English", "Based On Percentage", "4%","assets/images/up-right-arrow.png","Details")
+    ];
+  }
+}

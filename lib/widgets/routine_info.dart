@@ -18,8 +18,8 @@ class RoutineInfo extends StatelessWidget {
               child: Stack(
                 children: [
                   Container(
-                    height: 150,
-                    width: 150,
+                    height: MediaQuery.of(context).size.height/4.7,
+                    width: MediaQuery.of(context).size.width/2.5,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white38
