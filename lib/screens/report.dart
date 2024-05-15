@@ -43,7 +43,6 @@ class Report extends StatelessWidget {
           Expanded(
               flex: 2,
               child: SubjectWise()),
-
         ],
       ),
     );

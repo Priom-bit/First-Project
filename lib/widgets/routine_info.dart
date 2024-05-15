@@ -1,4 +1,5 @@
 import 'package:first_project/model/routine.dart';
+import 'package:first_project/screens/test.dart';
 import 'package:flutter/material.dart';
 
 class RoutineInfo extends StatelessWidget {
@@ -17,12 +18,20 @@ class RoutineInfo extends StatelessWidget {
               padding: const EdgeInsets.only(left: 18),
               child: Stack(
                 children: [
-                  Container(
-                    height: MediaQuery.of(context).size.height/4.7,
-                    width: MediaQuery.of(context).size.width/2.5,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color: Colors.white38
+                  InkWell(
+                    onTap: (){
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => const Test()),
+                      );
+                    },
+                    child: Container(
+                      height: MediaQuery.of(context).size.height/4.7,
+                      width: MediaQuery.of(context).size.width/2.5,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Colors.white38
+                      ),
                     ),
                   ),
                  Positioned(

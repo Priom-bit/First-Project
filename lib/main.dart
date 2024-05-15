@@ -1,4 +1,7 @@
-import 'package:first_project/report.dart';
+import 'package:first_project/screens/package_plan.dart';
+import 'package:first_project/screens/report.dart';
+import 'package:first_project/screens/test.dart';
+import 'package:first_project/widgets/subject_wise.dart';
 import 'package:flutter/material.dart';
 
 void main() {
